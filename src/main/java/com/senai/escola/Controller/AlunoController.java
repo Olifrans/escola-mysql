@@ -27,8 +27,8 @@ public class AlunoController {
     }
 
 
-    @DeleteMapping
-    public void excluirAluno(Long id){
+    @DeleteMapping("/{id}")
+    public void excluirAluno(@PathVariable Long id){
         alunoService.deletarAluno(id);
     }
 

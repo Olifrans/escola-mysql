@@ -1,41 +1,44 @@
 package com.senai.escola.Controller;
 
 import com.senai.escola.Models.Aluno;
+import com.senai.escola.Models.Professor;
 import com.senai.escola.Service.AlunoService;
+import com.senai.escola.Service.ProfessorService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 
 @RestController
-@RequestMapping("/alunos")
-public class AlunoController {
-    private final AlunoService alunoService;
+@RequestMapping("/professores")
+public class ProfessorController {
+    private final ProfessorService professorService;
 
-    public AlunoController(AlunoService alunoService) {
-        this.alunoService = alunoService;
+    public ProfessorController(ProfessorService professorService) {
+        this.professorService = professorService;
     }
 
+
     @GetMapping
-    public List<Aluno> buscarAlunos(){
-        return alunoService.buscarTodosAlunos();
+    public List<Professor> buscarProfessores(){
+        return professorService.buscarTodosProfessores();
     }
 
     @PostMapping
-    public Aluno salvar(@RequestBody Aluno aluno){
-        return alunoService.salvarNovoAluno(aluno);
+    public Professor salvar(@RequestBody Professor professor){
+        return professorService.salvarNovoProfessor(professor);
     }
 
 
     @DeleteMapping("/{id}")
     public void excluirAluno(@PathVariable Long id){
-        alunoService.deletarAluno(id);
+        professorService.deletarProfessor(id);
     }
 
 
     @GetMapping("/{id}")
-    public Aluno buscaAlunoPorId(@PathVariable Long id){
-        return alunoService.buscarAlunoId(id);
+    public Professor buscaAlunoPorId(@PathVariable Long id){
+        return professorService.buscarProfessorId(id);
     }
 
 
