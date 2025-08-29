@@ -1,84 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sistema Escolar</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="./estiloprincipal.css">
-  
+
+  <script src="https://cdn.tailwindcss.com"></script>  
+  <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
-<!-- Header -->
-<header class="bg-blue-600 text-white shadow-lg">
-  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white shadow-lg">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
 
-    <a href="index.html">
-      <h1 class="text-2xl font-bold">📚 Sistema Escolar</h1>
-    </a>
+      <a href="index.html">
+        <h1 class="text-2xl font-bold">📚 Sistema Escolar</h1>
+      </a>
 
-    <nav class="space-x-6">
-      <a href="index.html" class="hover:text-yellow-300 transition">Home</a>
-      <a href="professor.html" class="hover:text-yellow-300 transition">Professor</a>
-      <a href="aluno.html" class="hover:text-yellow-300 transition">Aluno</a>
-    </nav>
-  </div>
-</header>
-
-<!-- Main -->
-<main class="flex-grow">
-
-  <!-- Hero -->
-  <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-20 text-center shadow-md">
-    <h2 class="text-4xl font-extrabold mb-4">Bem-vindo ao Sistema Escolar</h2>
-    <p class="text-lg">Gestão moderna para professores e alunos em um só lugar</p>
-  </section>
-
-  <!-- Carrossel -->
-  <section class="overflow-hidden relative w-full max-w-4xl mx-auto mt-10 rounded-2xl shadow-lg">
-    <div class="flex w-[400%] carousel-track">
-      <img src="https://static.vecteezy.com/ti/vetor-gratis/t2/47074938-uma-conjunto-do-6-o-negocio-icones-como-escola-graduacao-ferramentas-vetor.jpg" class="w-1/4 object-cover" alt="Escola">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Qg6zaBUT4URi8UTEeTR396M9mqQ8QdzoOQ&s" class="w-1/4 object-cover" alt="Professor">
-      <img src="https://www.eshte.pt/contents/ds_subpage/barra-artigo-topo--site-eshte-2.png" class="w-1/4 object-cover" alt="Alunos">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnYBFCESv02_0pwU1fr2mA_kzk_wMCCTUAyA&s" class="w-1/4 object-cover" alt="Biblioteca">
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-yellow-300 transition">Home</a>
+        <a href="professor.html" class="hover:text-yellow-300 transition">Professor</a>
+        <a href="aluno.html" class="hover:text-yellow-300 transition">Aluno</a>
+      </nav>
     </div>
-  </section>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-grow">
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-20 text-center shadow-md">
+      <h2 class="text-4xl font-extrabold mb-4">Bem-vindo ao Sistema Escolar</h2>
+      <p class="text-lg">Gestão moderna para professores e alunos em um só lugar</p>
+    </section>
+
+    
+    <!-- Carrossel -->
+    <section class="overflow-hidden relative w-full max-w-4xl mx-auto mt-10 rounded-2xl shadow-lg">
+      <div class="flex w-[400%] carousel-track">
+        <img
+          src="https://static.vecteezy.com/ti/vetor-gratis/t2/47074938-uma-conjunto-do-6-o-negocio-icones-como-escola-graduacao-ferramentas-vetor.jpg"
+          class="w-1/4 object-cover" alt="Escola">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Qg6zaBUT4URi8UTEeTR396M9mqQ8QdzoOQ&s"
+          class="w-1/4 object-cover" alt="Professor">
+        <img src="https://www.eshte.pt/contents/ds_subpage/barra-artigo-topo--site-eshte-2.png"
+          class="w-1/4 object-cover" alt="Alunos">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnYBFCESv02_0pwU1fr2mA_kzk_wMCCTUAyA&s"
+          class="w-1/4 object-cover" alt="Biblioteca">
+      </div>
+    </section>
 
 
-  <!-- Cards -->
-  <section class="container mx-auto py-16 px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-    <!-- Card Professor -->
-    <a href="professor.html"
-       class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6 flex flex-col items-center text-center">
-      <img src="https://source.unsplash.com/200x200/?teacher" alt="Professor" class="rounded-full shadow mb-4">
-      <h3 class="text-xl font-semibold mb-2">Área do Professor</h3>
-      <p class="text-gray-600">Acesse ferramentas para gerenciar suas turmas, avaliações e conteúdos.</p>
-    </a>
+    <!-- Cards -->
+    <section class="container mx-auto py-16 px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Card Professor -->
+      <a href="professor.html"
+        class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6 flex flex-col items-center text-center">
+        <img src="https://source.unsplash.com/200x200/?teacher" alt="Professor" class="rounded-full shadow mb-4">
+        <h3 class="text-xl font-semibold mb-2">Área do Professor</h3>
+        <p class="text-gray-600">Acesse ferramentas para gerenciar suas turmas, avaliações e conteúdos.</p>
+      </a>
 
-    <!-- Card Aluno -->
-    <a href="aluno.html"
-       class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6 flex flex-col items-center text-center">
-      <img src="https://source.unsplash.com/200x200/?student" alt="Aluno" class="rounded-full shadow mb-4">
-      <h3 class="text-xl font-semibold mb-2">Área do Aluno</h3>
-      <p class="text-gray-600">Consulte suas notas, presença e materiais de estudo de forma simples.</p>
-    </a>
-  </section>
+      <!-- Card Aluno -->
+      <a href="aluno.html"
+        class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6 flex flex-col items-center text-center">
+        <img src="https://source.unsplash.com/200x200/?student" alt="Aluno" class="rounded-full shadow mb-4">
+        <h3 class="text-xl font-semibold mb-2">Área do Aluno</h3>
+        <p class="text-gray-600">Consulte suas notas, presença e materiais de estudo de forma simples.</p>
+      </a>
+    </section>
 
-</main>
+  </main>
 
-<!-- Footer -->
-<footer class="bg-blue-700 text-white text-center py-4">
-  <p>&copy; 2025 Sistema Escolar - Java Senai</p>
-</footer>
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center py-4">
+    <p>&copy; 2025 Sistema Escolar - Java Senai</p>
+  </footer>
 
 </body>
+
 </html>
-
-<!-- senai -->
-
-<!--https://tailwindcss.com/-->
-
-<!--https://tailwindcss.com/-->
-
-<!--https://tailwindcss.com/-->
