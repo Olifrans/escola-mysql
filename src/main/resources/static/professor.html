@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Professores</title>
+
+ <link rel="stylesheet" href="./professor.css">
+
+</head>
+<body>
+
+
+    
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="./index.html">
+     <img style="width: 130px;" src="https://desenvolveitapevi.wordpress.com/wp-content/uploads/2016/02/logo-senai1.png" alt="">      
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./professor.html">Professor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./aluno.html">Aluno</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+  <div class="container">
+    <h1>Professores Cadastrados</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+      <tbody id="professor-tbody">
+        <!-- Os dados dos professores vão aparecer aqui -->
+      </tbody>
+    </table>
+  </div>
+
+<script src="./professor.js"></script>
+</body>
+</html>

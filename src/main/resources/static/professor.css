@@ -1,0 +1,88 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #f3f3f3;
+  --white-color: #ffffff;
+  --text-color: #333;
+  --border-color: #ddd;
+  --hover-color: #f1f1f1;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: var(--white-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+h1 {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+th, td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1.1rem;
+}
+
+tr:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+th {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+td {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  
+  th, td {
+    padding: 10px 12px;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
