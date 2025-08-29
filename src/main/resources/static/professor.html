@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lista de Professores</title>
-
- <link rel="stylesheet" href="./professor.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professores Cadastrados</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
-  <div class="container">
-    <h1>Professores Cadastrados</h1>
+<!-- Header -->
+<header class="bg-blue-600 text-white shadow-lg">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
 
-    <table>
-      <thead>
-        <tr>
-          <th>Nome</th>
-          <th>Email</th>
-          <th>Telefone</th>
-        </tr>
-      </thead>
-      <tbody id="professor-tbody">
-        <!-- Os dados dos professores vão aparecer aqui -->
-      </tbody>
-    </table>
+    <a href="index.html">
+      <h1 class="text-2xl font-bold">📚 Sistema Escolar</h1>
+    </a>
+
+    <nav class="space-x-6">
+      <a href="index.html" class="hover:text-yellow-300 transition">Início</a>
+      <a href="professor.html" class="hover:text-yellow-300 transition font-semibold underline">Professor</a>
+      <a href="aluno.html" class="hover:text-yellow-300 transition">Aluno</a>
+    </nav>
   </div>
+</header>
+
+<!-- Conteúdo -->
+<main class="flex-grow flex items-center justify-center py-12 px-4">
+  <div class="bg-white rounded-2xl shadow-lg p-8 w-full max-w-4xl">
+    <h2 class="text-2xl font-bold text-center mb-6">Professores Cadastrados</h2>
+
+    <div class="overflow-x-auto">
+      <table class="w-full border-collapse">
+        <thead>
+        <tr class="bg-blue-500 text-white text-left">
+          <th class="p-3">Nome</th>
+          <th class="p-3">Email</th>
+          <th class="p-3">Telefone</th>
+        </tr>
+        </thead>
+        <tbody id="professor-tbody" class="divide-y divide-gray-200">
+        <!-- Os dados dos professores vão aparecer aqui -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-blue-700 text-white text-center py-4">
+  <p>&copy; 2025 Sistema Escolar - Java Senai</p>
+</footer>
+
 
 <script src="./professor.js"></script>
 </body>
