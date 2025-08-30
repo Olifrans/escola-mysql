@@ -8,6 +8,6 @@
       100% { transform: translateX(0%); }
     }
     .carousel-track {
-      animation: slide 20s infinite;
+      animation: slide 10s infinite;
     }
 

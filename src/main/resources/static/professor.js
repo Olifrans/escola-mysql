@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('http://localhost:8080/professores')
+  fetch('http://localhost:8080/professor')
     .then(response => response.json())
     .then(data => {
       const tbody = document.getElementById('professor-tbody');
